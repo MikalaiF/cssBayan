@@ -169,7 +169,7 @@ img {
    }
 
    .title {
-      font-size: 3.3em;
+      font-size: 2.2em;
    }
 
    img {
@@ -235,6 +235,6 @@ img {
 /* ! Media 820++px */
 @media (min-width: 820px) {
    body {
-      font-size: 2em;
+      font-size: 1.3em;
    }
 }
