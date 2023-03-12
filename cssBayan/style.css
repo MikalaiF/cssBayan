@@ -100,6 +100,59 @@ img {
    opacity: 1;
 }
 
+.input:checked~.title>.title-right:hover {
+   opacity: 1;
+}
+
+
+
+.content label:hover,
+.title:hover,
+.title:hover .content {
+   cursor: pointer;
+
+}
+
+
+.title-right:hover,
+.flex-box:hover .title-right {
+   opacity: 1;
+   transform: rotate(50deg);
+   color: #000000;
+}
+
+.wraper {
+   cursor: pointer;
+}
+
+.flex-box:hover .title-left,
+.flex-box:hover .content {
+   max-width: 100%;
+   opacity: 1;
+   color: #000000;
+}
+
+.flex-box:active .title-right {
+   color: #0088ff !important;
+}
+
+
+.wrapper:hover>.flex-box .title-right,
+.wrapper:hover>.flex-box .title {
+   opacity: 1;
+   color: #000000;
+}
+
+.flex-box:active {
+   opacity: .5;
+
+}
+
+.flex-box:active .title-left {
+   color: #0088ff;
+}
+
+
 /* ! when hover is supported */
 @media (hover: hover) {
 
@@ -115,13 +168,20 @@ img {
       opacity: 0;
    }
 
+   .title {
+      font-size: 3.3em;
+   }
+
+   img {
+      width: 40%;
+   }
+
+
    .input:checked~.title>.title-right:hover {
       opacity: 1;
    }
 
-   .title {
-      font-size: 3.3em;
-   }
+
 
    .content label:hover,
    .title:hover,
@@ -131,9 +191,6 @@ img {
    }
 
 
-   .title-right {
-      opacity: 0;
-   }
 
    .title-right:hover,
    .flex-box:hover .title-right {
@@ -141,12 +198,6 @@ img {
       transform: rotate(50deg);
       color: #000000;
    }
-
-
-   img {
-      width: 40%;
-   }
-
 
    .wraper {
       cursor: pointer;
@@ -179,12 +230,9 @@ img {
       color: #0088ff;
    }
 
-   .input:checked {
-      background: #000;
-   }
 }
 
-/* ! Media 1420++px */
+/* ! Media 820++px */
 @media (min-width: 820px) {
    body {
       font-size: 2em;
