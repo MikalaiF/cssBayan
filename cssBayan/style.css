@@ -162,6 +162,19 @@ img {
    }
 }
 
+/* ! Media 1920++px */
+@media(min-width: 1920px) {
+   h1 {
+      font-size: 2.5em;
+   }
+
+   .title-right,
+   .title-left {
+      font-size: 1.3em;
+   }
+
+}
+
 /* ! Media 1420++px */
 @media (min-width: 1420px) {
    .input:checked~.title>.title-right {
