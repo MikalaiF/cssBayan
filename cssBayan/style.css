@@ -89,8 +89,6 @@ img {
 
 }
 
-
-
 .title-left {
    display: inline-block;
    padding-right: .5em;
@@ -102,104 +100,17 @@ img {
    opacity: 1;
 }
 
+/* ! when hover is supported */
+@media (hover: hover) {
+
+   a:hover {
+      color: white;
+      background: black;
+   }
+}
 
 /* ! Media 1420++px */
 @media (min-width: 1420px) {
-   /*
-   .input:checked~.title>.title-right,
-   .title-right {
-      opacity: 0;
-   }
-
-
-   .flex-box:hover .title-right,
-   .flex-box:hover .title-left,
-   .flex-box:hover .content {
-      max-width: 100%;
-      opacity: 1;
-      cursor: pointer;
-      color: #000000;
-   }
-
-   .title:hover .title-right {
-      opacity: 1;
-   }
-
-   .title-right:hover,
-   .flex-box:hover .title-right {
-      opacity: 1;
-      transform: rotate(45deg);
-      color: #000000;
-   }
-
-   img {
-      width: 40%;
-   }
-}
-
-.content:hover {
-   cursor: pointer;
-}*/
-
-   /*.title-right:hover {
-      opacity: 1;
-   }
-
-   .input:checked~.title>.title-right {
-      opacity: 0;
-   }
-
-   .input:checked~.flex-box:hover .title-right {
-      opacity: 1;
-   }
-
-
-   .title {
-      font-size: 3.3em;
-   }
-
-   .content label:hover,
-   .title:hover,
-   .title:hover .content {
-      cursor: pointer;
-
-   }
-
-
-   .title-right {
-      opacity: 1;
-   }
-
-   .title-right:hover,
-   .flex-box:hover .title-right {
-      opacity: 1;
-      transform: rotate(45deg);
-      color: #000000;
-   }
-
-
-
-   img {
-      width: 40%;
-   }
-}
-
-.wraper {
-   cursor: pointer;
-}
-
-.flex-box:hover .title-left,
-.flex-box:hover .content {
-   max-width: 100%;
-   opacity: 1;
-   color: #000000
-}
-
-.flex-box:active .content img,
-.flex-box:active .title {
-   opacity: .5;
-}*/
-
    .input:checked~.title>.title-right {
       opacity: 0;
    }
@@ -259,18 +170,6 @@ img {
       color: #000000;
    }
 
-
-
-   /*.flex-box:active .content img,
-   .flex-box:active .title-left {
-      color: #0088ff;
-      opacity: .5;
-
-   }
-
-   .flex-box:active .title-right {
-      background: #ff0000;
-   }*/
    .flex-box:active {
       opacity: .5;
 
@@ -282,5 +181,12 @@ img {
 
    .input:checked {
       background: #000;
+   }
+}
+
+/* ! Media 1420++px */
+@media (min-width: 820px) {
+   body {
+      font-size: 2em;
    }
 }
