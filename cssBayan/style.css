@@ -86,7 +86,7 @@ img {
    font-size: 1.8em;
    display: inline-block;
    padding-right: .5em;
-
+   opacity: 0;
 }
 
 .title-left {
@@ -151,6 +151,7 @@ img {
 .flex-box:active .title-left {
    color: #0088ff;
 }
+
 
 
 /* ! when hover is supported */
